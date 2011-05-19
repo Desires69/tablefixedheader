@@ -60,7 +60,9 @@
 			
 			minColWidth	 : 100,
 			
-			wrapper		 : true
+			wrapper		 : true,
+			
+			border     : true
 		};  
 		
 		var options = $.extend(defaults, options); 
@@ -597,6 +599,11 @@
 				
 					_body.css('height', options.height + 'px');
 				}
+				
+				if(!options.border) {
+
+			    _body.addClass('no-border');
+		    }
 				
 				_colgroup_body = _colgroup.clone();
 				

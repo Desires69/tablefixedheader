@@ -167,6 +167,11 @@ div.t_fixed_header.ui .body tr td {
 	background		: none;
 }
 
+div.t_fixed_header.ui .body.no-border tr td {
+	border 	: none;
+	background		: none;
+}
+
 div.t_fixed_header.ui .body tr:last-child td {
 	border-bottom-width : 0px;
 }

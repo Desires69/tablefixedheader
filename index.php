@@ -29,7 +29,7 @@
 		
 		<script type="text/javascript" src="highlighter/codehighlighter.js"></script>	
 		<script type="text/javascript" src="highlighter/javascript.js"></script>			
-		<script type="text/javascript" src="javascript/jquery.fixheadertable.min.js"></script>		
+		<script type="text/javascript" src="javascript/jquery.fixheadertable.js"></script>		
 		
 		<script type="text/javascript">  
 					
@@ -112,6 +112,13 @@
 							rowsPerPage	 : 10,
 							resizeCol : true
 						});
+						if(id == "#8")
+  						$('#8').fixheadertable({ 
+  						  height: 200,
+  						  zebra: true,
+  						  wrapper: false,
+  						  border: false
+  						});
 				};
 				
 				$("button").button();
@@ -473,6 +480,22 @@ $('#7').fixheadertable({
     resizeCol	: true
 });
 		</code></pre>
+
+		<!--  THE EXAMPLE #8 -->
+		
+		<div class="title">Example #8 (no borders)</span></div>			
+		<button class="loadexample" num="#8">Load this example</button><br/><br/>
+	  <table class="resultset" id="8"></table>
+		<pre><code class="javascript">
+/**
+ * No borders
+ */
+
+$('#8').fixheadertable({
+  border: false
+});
+		</code></pre>
+
 		<br/><br/>
 		
 		<div style="border-top : 3px dashed black">&nbsp;</div>
