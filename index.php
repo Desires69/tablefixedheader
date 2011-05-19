@@ -117,7 +117,8 @@
   						  height: 200,
   						  zebra: true,
   						  wrapper: false,
-  						  border: false
+  						  border: false,
+  						  height: 'auto'
   						});
 				};
 				
@@ -483,16 +484,23 @@ $('#7').fixheadertable({
 
 		<!--  THE EXAMPLE #8 -->
 		
-		<div class="title">Example #8 (no borders)</span></div>			
+		<div class="title">Example #8 (auto height, no borders, no wrapper)</span></div>			
 		<button class="loadexample" num="#8">Load this example</button><br/><br/>
-	  <table class="resultset" id="8"></table>
+    <div style='position:relative; height:500px; border:1px solid black;'>
+  	  <table class="resultset" id="8"></table>
+    </div>
 		<pre><code class="javascript">
 /**
- * No borders
+ * In order for 'height: auto' to work properly, enclose your table with a div that is 
+ * either relatively or absolutely positioned.
  */
 
 $('#8').fixheadertable({
-  border: false
+    height: 200,
+    zebra: true,
+    wrapper: false,
+    border: false,
+    height: 'auto'
 });
 		</code></pre>
 

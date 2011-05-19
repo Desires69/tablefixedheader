@@ -916,6 +916,22 @@
 				_body.css('margin-bottom', 17 + 'px');
 			}
 			
+			if (options.height === 'auto') {
+		    
+         var headHeight = _headerscontainer.height();
+
+         _body.css({ position:'absolute', top:headHeight, left:0, right:0, bottom:0 });        
+         
+         _main_wrapper.css({ position:'absolute', top:0, left:0, right:0, bottom:0 });
+         
+         main_wrapper_child.css({ position:'absolute', top:0, left:0, right:0, bottom:0 });
+         
+         _wrapper.css({ position:'absolute', top:0, left:0, right:0, bottom:0 });
+         
+         tampon.css({ position:'absolute', top:0, left:0, right:0, bottom:0 });
+		    
+		  }
+			
 			if (options.caption != '') {
 				
 				var caption = $('<div class="t_fixed_header_caption ui-widget-header ui-corner-top">' + options.caption + '</div>');
