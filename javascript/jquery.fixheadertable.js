@@ -242,7 +242,7 @@
 			
 			function buildTop (table) {
 				
-				_fillScrollbar = $('<div class="headtable ui-state-default" style="margin-right : 0px"></div>');
+				_fillScrollbar = $('<div class="headtable ui-state-default" style="width:100%"></div>');
 				
 				_headerscontainer = _fillScrollbar;
 				
